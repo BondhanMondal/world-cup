@@ -239,3 +239,115 @@ main {
     font-weight: 500;
     color: #B9B9B9;
 }
+
+/* ---------------------------------------------------------------------------------------------
+                                        Media Queries
+------------------------------------------------------------------------------------------------ */
+
+@media only screen and (min-width:1056px) and (max-width:1355px) {
+    
+    .container{
+        width: 90%;
+    }
+    .blogs {
+            grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:1049px) and (max-width:1055px) {
+    .container {
+            width: 90%;
+    }
+    .middle-part {
+            display: flex;
+            flex-direction: column;
+
+    }
+    .middle-left {
+            background-color: #553D67;
+            
+            width: 100%;
+            
+            border-radius: 10px;
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    }
+    .normal-anchor{
+            margin: 0;
+    }
+    .highlighted-anchor{
+            margin: 0;
+    }
+
+    .blogs{
+            
+            grid-template-columns: repeat(3,1fr);
+            
+    }
+    
+}
+
+@media only screen and (min-width:698px) and (max-width:1048px) {
+    .container {
+            width: 90%;
+    }
+    .banner{
+        height: 500px;
+        margin-bottom: 0;
+    }
+    .banner-title{
+        font-size: 33px;
+    }
+
+
+    
+    .middle-part {
+            display: flex;
+            flex-direction: column;
+    
+    }
+    
+    .middle-left {
+        background-color: #553D67;
+        height: 100px;
+        width: 100%;
+        margin-bottom: 30px;
+    
+        border-radius: 10px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        
+    }
+    
+    .normal-anchor {
+        margin: 0;
+        width: 200px;
+    }
+    
+    .highlighted-anchor {
+        margin: 0;
+        width: 200px;
+            
+    }
+    
+    .blogs {
+        width: 100%;
+    
+        grid-template-columns: repeat(2, 1fr);
+        
+    
+    }
+    .anchor{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .anchor a{
+        margin-left: 10px;
+    }
+    
+}
